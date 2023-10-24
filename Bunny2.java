@@ -1,5 +1,9 @@
+//katelynn.graham@malad.us
+//Katelynn Graham
+//Software Development 11A
+//Bunny Class PT 2 Fixed
 
-
+//The bunny class
 public class Bunny2 {
     static ArrayList bunnylist=new ArrayList ();
 
@@ -10,6 +14,7 @@ public class Bunny2 {
     // Variable for bunny age
     String bunnyAge;
 
+    //The second assignment part with the fixes
     public static void main (String[] args) {
         // first object
         Object bunny5 = new Bunny1("Sammy", 2, "white");

@@ -16,13 +16,11 @@ public class Bunny1{
         //Sets the bunny color
         bunnyColor = color;
     }
+    //First fixes with deletions
     public String toString(){
         String bunnyTraits;
         bunnyTraits = bunnyName+" is "+bunnyAge+" years old and is "+bunnyColor;
         return bunnyTraits;
     }
-
-
-
 
 }
