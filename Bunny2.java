@@ -3,10 +3,19 @@
 //Software Development 11A
 //Bunny Class PT 2 Fixed
 
+import java.util.ArrayList;
 //The bunny class
-public class Bunny2 {
+public class Bunny1 {
     static ArrayList bunnylist=new ArrayList ();
-
+    //Bunny objects and description
+ public Bunny1 (String name, int age, String color) {
+        //Setting the bunny name
+        bunnyName = name;
+        //Sets the bunny age
+        bunnyAge = String.valueOf(age);
+        //Sets the bunny color
+        bunnyColor = color;
+    }
     // Name for the bunnies
     String bunnyName;
     //Variable for bunny color
