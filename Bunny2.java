@@ -15,6 +15,7 @@ public class Bunny1 {
         bunnyAge = String.valueOf(age);
         //Sets the bunny color
         bunnyColor = color;
+
     }
     // Name for the bunnies
     String bunnyName;
@@ -42,6 +43,17 @@ public class Bunny1 {
         System.out.println(bunny5);
         }
     }
-
+     public void size() {
+            System.out.println("centimeters");
+             }
+        Bunny myBunny = new Bunny1();
+        myBunny.size();
+        Bunnies myBunny = new Bunnies();
+        myBunny.@size(40);
     
+        Bunnies2 myBunny = new Bunnies2();{
+         Bunny1 = myBunny.breed("breed");
+        myBunny.breed("HollandLop");
+        }
 }
+
