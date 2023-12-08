@@ -10,7 +10,7 @@ import java.util.Arraylist;
 import java.util.List;
 
 
-public class CardsDeck {
+public class Card{
     public static void main (String[] args) 
      {
         //Create the class variables
@@ -109,5 +109,5 @@ public class CardsDeck {
     System.out.println (cardInfo7);
     System.out.println (cardInfo8);
         }
-        //Let's inherit the deck into another class to make it shuffle the different types of cards
 }
+ //Let's inherit the deck into another class to make it shuffle the different types of cards
