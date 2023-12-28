@@ -6,26 +6,63 @@
 //Software and Programming Development 11A
 //December 1, 2023
 
-import java.util.Arraylist;
 import java.util.List;
 
 
 public class Card{
-    public static void main (String[] args) 
-     {
+ 
+     
         //Create the class variables
-        String cardType = cardSuit;
-        int cardSuitNumber = numberOfSuits;
-        int cards = cardsInDeck;
-        int cardsSuit = numberOfCardsInSuit;
-        String suitType = typeOfCardsInSuit;
-        String typeofCard = typeOfCardInDeck;
-        int cardsDealt = numberOfCardsDealtOverall;
-        int cardsDealtPerHand = numberOfCardsDeltToEachPersonPerHand;
-        int numberOfHands = numberOfHandsDealt;
-        }
+        String cardType;
+        int cardSuitNumber; //Total number of suits in the deck, 4 if a normal deck, but can be any number for a custom deck
+        int cards;
+        int cardsSuit; //Reference to suit of card: 1 = spade, 2 = hearts, 0 = clubs, 3 = diamonds
+        String suitType; //String that names the suit type
+        String typeofCard; // description of the card 2, queen, ace, king, jack, etc.
+        int cardsDealt;
+        int cardsDealtPerHand;
+        int numberOfHands;
+        int cardValue;
+        
     //create the cards
-    {
+    
+    public Card (int cardsSuit, String suitType, String typeofCard, int cardValue) {
+        //Setting the bunny name
+        this.cardsSuit=cardsSuit;
+        //Sets the suit type
+        this.suitType=suitType;
+        //Sets the card type
+       this.typeofCard=typeofCard;
+       //Sets card value
+       this.cardValue=cardValue;
+    }
+
+public String toString(){
+    String cardTraits;
+    cardTraits = "This card is a"+typeofCard+"of"+suitType;
+    return cardTraits;
+        }
+        public String gettypeofCard(){
+            return typeofCard;
+        }
+        public String getSuitType(){
+            return suitType;
+        }
+        public int getcardValue(){
+            return cardValue;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+  /*   {
         Card cardInfo1 = new int cardSuitNumber [4];
         //how many suits there are
         Card cardInfo2 = new int cardsSuit [13];
@@ -109,5 +146,7 @@ public class Card{
     System.out.println (cardInfo7);
     System.out.println (cardInfo8);
         }
+
 }
  //Let's inherit the deck into another class to make it shuffle the different types of cards
+ */
