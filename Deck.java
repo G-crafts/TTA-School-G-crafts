@@ -10,8 +10,9 @@ import java.util.Collections;
 
 public class Deck{
     
-    //Let's inherit the card descriptions to be able to put them into the deck
-   ArrayList cardsInDeck;
+// Creating the arraylist of cards in the deck
+    ArrayList cardsInDeck;
+    //Creating the parameters of the arraylist
    int nextCard;
    int totalNumberOfCardsInDeck=52;
 
@@ -21,6 +22,9 @@ public class Deck{
     
 //create the cards
 
+//Creating the 13 cards in the Spades suit
+//Adding the Values of each card
+//Ace = 13 and 2 = 1
     Card cardInfo1 = new Card(0,"Spades","Ace", 13);
     cardsInDeck.add (cardInfo1);
     cardInfo1 = new Card(0,"Spades","King", 12);
@@ -46,7 +50,12 @@ public class Deck{
     cardInfo1 = new Card(0,"Spades","3", 2);
     cardsInDeck.add (cardInfo1);
     cardInfo1 = new Card(0,"Spades","2", 1);
+    //2's value is equivalent to 1
     cardsInDeck.add (cardInfo1);
+
+//Creating the 13 cards in the Hearts suit
+//Adding the Values of each card
+//Ace = 13 and 2 = 1
 
     cardInfo1 = new Card(0,"Hearts","Ace", 13);
     cardsInDeck.add (cardInfo1);
@@ -73,7 +82,12 @@ public class Deck{
     cardInfo1 = new Card(0,"Hearts","3", 2);
     cardsInDeck.add (cardInfo1);
     cardInfo1 = new Card(0,"Hearts","2", 1);
+    //card 2's value is equivalent to 1
     cardsInDeck.add (cardInfo1);
+
+//Creating the 13 cards in the Diamonds suit
+//Adding their card values
+//Ace = 10, 2 = 1
 
     cardInfo1 = new Card(0,"Diamonds","Ace", 13);
     cardsInDeck.add (cardInfo1);
@@ -99,8 +113,13 @@ public class Deck{
     cardsInDeck.add (cardInfo1);
     cardInfo1 = new Card(0,"Diamonds","3", 2);
     cardsInDeck.add (cardInfo1);
+//card 2's value is equivalent to 1
     cardInfo1 = new Card(0,"Diamonds","2", 1);
     cardsInDeck.add (cardInfo1);
+
+    //Creating the 13 cards in the Clubs suit
+    //Adding their card values
+    //Ace = 13, 2 = 1
 
     cardInfo1 = new Card(0,"Clubs","Ace", 13);
     cardsInDeck.add (cardInfo1);
@@ -127,16 +146,20 @@ public class Deck{
     cardInfo1 = new Card(0,"Clubs","3", 2);
     cardsInDeck.add (cardInfo1);
     cardInfo1 = new Card(0,"Clubs","2", 1);
+    //card 2's value is equivalent to 1
     cardsInDeck.add (cardInfo1);
     nextCard=0;
 }
+//To shuffle the deck
 public void DeckShuffle(){
     Collections.shuffle(cardsInDeck);
     nextCard=0;
 }
+//To deal the next card from the top of the stack
 public Card dealNextCard(){
 return cardsInDeck.get(nextCard++);
 }
+//To check to see if there is a next card or if the deck is gone
 public boolean isNextCard(){
     if (nextCard<=cardsInDeck.size()) {
         return true;

@@ -27,7 +27,7 @@ public class Card{
     //create the cards
     
     public Card (int cardsSuit, String suitType, String typeofCard, int cardValue) {
-        //Setting the bunny name
+        //Setting the card suit
         this.cardsSuit=cardsSuit;
         //Sets the suit type
         this.suitType=suitType;
@@ -36,7 +36,7 @@ public class Card{
        //Sets card value
        this.cardValue=cardValue;
     }
-
+//using the to string method to type of suit and usign getters for suit type, type of card, and card value
 public String toString(){
     String cardTraits;
     cardTraits = "This card is a"+typeofCard+"of"+suitType;
@@ -59,7 +59,7 @@ public String toString(){
 
 
 
-
+//turned all of this old code into an example/comment
 
 
   /*   {
