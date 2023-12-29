@@ -9,12 +9,12 @@ import java.util.ArrayList;
 
 public class Dealer {
     //creating the parameters for the class
-    Deck deckInUse;
-    int player1Score=0;
-    int player2Score=0;
-    int player3Score=0;
-    int player4Score=0;
-    int player5Score=0;
+    static Deck deckInUse;
+    static int player1Score=0;
+    static int player2Score=0;
+    static int player3Score=0;
+    static int player4Score=0;
+    static int player5Score=0;
 
 //creating the deck and all 5 players
 public static void main (String[] args){
@@ -36,31 +36,31 @@ public static void main (String[] args){
 
   //deal the next card to player 2
 
-        if (deckInUse.isNextCard){
+        if (deckInUse.isNextCard()){
             player2.add(deckInUse.dealNextCard());
         }
 
     //deal the next card to player 3
 
 
-        if (deckInUse.isNextCard){
+        if (deckInUse.isNextCard()){
             player3.add(deckInUse.dealNextCard());
         }
 
     //deal the next card to player 4
 
 
-        if (deckInUse.isNextCard){
+        if (deckInUse.isNextCard()){
             player4.add(deckInUse.dealNextCard());
         }
 
     //deal the next card to player 5
 
 
-        if (deckInUse.isNextCard){
+        if (deckInUse.isNextCard()){
             player5.add(deckInUse.dealNextCard());
         }
-
+    }
         //print out player 1's hand and get the value of their cards
 
         System.out.println("player1's hand is");
@@ -107,7 +107,6 @@ public static void main (String[] args){
             
         }
 
-    }
 
     //If player1's score is greater than players 2-5 score, player1 beats players 2-5
 
