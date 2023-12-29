@@ -4,31 +4,42 @@
 
 //for CTE Software Development class 2023
 
-public class Horse {
+//Mr. Gross
+
+public class Horse implements Comparable<Horse>{
+
+    //Creating the method for the horse class
     String name;
     
     int birthYear;
+
+    //Creating the parameters
     public Horse(String horseName, int year){
 
         name=horseName;
         birthYear=year;
 
     }
-
-    void public changeName(String newName){
+// creating a method for the horse to have a new name
+    public void changeName(String newName){
         name=newName;
-    
-    String public toString(){
-        return name;
-        
-        Horse horse1= new Horse("dolly",2008);
-        Horse horse2= new Horse("annie",1990);
-        Horse horse3= new Horse("fabio",2004);
+    }
+    //toString method for the horse info
+    public String toString(){
+        String horseInfo;
+        //making it so that that it prints out something like "dolly is 13 years old"
+        horseInfo = name + " is " + birthYear + " years old ";
 
-            System.out.println("dolly");
-            System.out.println("annie");
-            System.out.println("fabio");
+
+        return horseInfo;
+        
+     
             
         }
+
+        //comparing and sorting the horses ages from youngest to oldest
+        public int compareTo(Horse horse1){
+            return birthYear-horse1.birthYear;
+        }
+
     }
-}

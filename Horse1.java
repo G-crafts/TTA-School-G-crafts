@@ -12,7 +12,7 @@ public class Horse1 implements Comparable{
     public interface Comparable<a>;
 
 
-    public Horse(String horseName, int year){
+    public Horse1(String horseName, int year){
 
         String name=horseName;
         birthYear=year;

@@ -11,7 +11,7 @@ import java.util.Collections;
 public class Deck{
     
 // Creating the arraylist of cards in the deck
-    ArrayList cardsInDeck;
+    ArrayList<Card> cardsInDeck;
     //Creating the parameters of the arraylist
    int nextCard;
    int totalNumberOfCardsInDeck=52;
@@ -19,6 +19,7 @@ public class Deck{
    public Deck (){
     cardsInDeck = new ArrayList <Card>();
 
+    
     
 //create the cards
 

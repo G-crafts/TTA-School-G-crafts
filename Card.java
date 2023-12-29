@@ -39,7 +39,7 @@ public class Card{
 //using the to string method to type of suit and usign getters for suit type, type of card, and card value
 public String toString(){
     String cardTraits;
-    cardTraits = "This card is a"+typeofCard+"of"+suitType;
+    cardTraits = "This card is a "+typeofCard+" of "+suitType;
     return cardTraits;
         }
         public String gettypeofCard(){
@@ -48,7 +48,7 @@ public String toString(){
         public String getSuitType(){
             return suitType;
         }
-        public int getcardValue(){
+        public int getCardValue(){
             return cardValue;
         }
     }
