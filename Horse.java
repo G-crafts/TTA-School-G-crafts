@@ -27,7 +27,7 @@ public class Horse implements Comparable<Horse>{
     //toString method for the horse info
     public String toString(){
         String horseInfo;
-        //making it so that that it prints out something like "dolly is 13 years old"
+        //making it so that it prints out something like "dolly is 13 years old"
         horseInfo = name + " is " + birthYear + " years old ";
 
 
