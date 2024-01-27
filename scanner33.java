@@ -1,3 +1,9 @@
+//katelynn.graham@malad.us
+//KatelynnGraham
+//G-crafts
+//Software and Programming Dev 11B
+// Mr Gross
+
 import java.util.Arrays;
 import java.util.Scanner;
 import java.lang.String;
