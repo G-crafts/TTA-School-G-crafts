@@ -15,15 +15,13 @@ public class StringWordBreakDown {
         //Here is the hard-coded string that Mr Gross provided
         String testString="the quick Brown Fox Jumped over the lazy dog";
 
-        //Converting all of the words to lower case
-        String toLowerCase=("the quick Brown Fox Jumped over the lazy dog");
-
-        //Creating the printed out hard coded words
-        int numberOfHardCodedWords = printedWords(testString);
+       
         // Printing the hard coded words into single word strings
         System.out.println ( " Let's break down the hard coded words into single words ");
+        //Creating the printed out hard coded words
+        int numberOfHardCodedWords = printedWords(testString);
         //Printing out the total number of words in the hard coded string
-        System.out.println ( " Total Number of Words in the Hard Coded String: " + numberOfHardCodedWords);
+        System.out.println ( " Total Number of Words: " + numberOfHardCodedWords);
 
         //Creating a scanner
         Scanner scan = new Scanner(System.in);
@@ -43,22 +41,19 @@ public class StringWordBreakDown {
         //Closing the scanner
         scan.close();
     }
-    //Creating a printed words chunk withthe splitting method for the input string
-    private static int printedWords(String inputString){
+    //Creating a printed words chunk with the splitting method for the input string
+    private static int printedWords(String input){
         //Splitting the string into separate words
-        String[] words = inputString.split("\\s+");
+        String[] words = input.split("\\s+");
 
         // for method
-        for (String word : words);
+        for (String word : words){
         //Printing the words into seprate lines
-        System.out.println (words);
-    }
+        System.out.println (word);
+        }
+    
 
-    private Object words;
-
-     {
-//returning the word lengths
+            //Returning the number of words
     return words.length;
-
-}
+    }
 }
