@@ -8,15 +8,14 @@
 
 //All of the imports used
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
 //Creating the StringTokenizerLetterFrequency class
 public class StringTokenizerLetterFrequency {
 
-    //Creating the main driver method that can throw a FileNotFoundException
-    public static void main(String[] args) throws FileNotFoundException {
+    //Creating the main driver method
+    public static void main(String[] args) {
         //Creating the filepath as the letter.txt file to read from
         String filePath = "letter.txt";
 
@@ -40,8 +39,8 @@ public class StringTokenizerLetterFrequency {
                 String[] allLines = line.split(",");
                 String letterLines = allLines[0].trim();
                 //line readers for floats and integers in all of the lines
-                float percentage = Float.parseFloat(allLines[1]);
-                int frequency = Integer.parseInt(allLines[2]);
+                int frequency = Integer.parseInt(allLines[1]);
+                float percentage = Float.parseFloat(allLines[2]);
 
                 //Adding the percentage to the total percentage
                 percentage += totalPercentage;
