@@ -17,11 +17,11 @@ public class StringWordBreakDown {
 
        
         // Printing the hard coded words into single word strings
-        System.out.println ( " Let's break down the hard coded words into single words ");
+        System.out.println ( "Let's break down the hard coded words into single words! ");
         //Creating the printed out hard coded words
         int numberOfHardCodedWords = printedWords(testString);
         //Printing out the total number of words in the hard coded string
-        System.out.println ( " Total Number of Words: " + numberOfHardCodedWords);
+        System.out.println ( "Total Number of Words:" + numberOfHardCodedWords);
 
         //Creating a scanner
         Scanner scan = new Scanner(System.in);
@@ -35,7 +35,7 @@ public class StringWordBreakDown {
         //The number of userinputted words = the printed words from the users input
         int numberOfUserInputtedWords = printedWords(usersInput);
         //Printing out the total number of words in the string as the number of user inputted words
-        System.out.println ("Total Number if Words in the String" + numberOfUserInputtedWords);
+        System.out.println ("Total number of words in the string" + numberOfUserInputtedWords);
 
 
         //Closing the scanner
