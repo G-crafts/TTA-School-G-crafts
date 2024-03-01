@@ -10,6 +10,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 
 //Creating the StringTokenizerLetterFrequency class
 public class StringTokenizerLetterFrequency {
@@ -37,28 +38,32 @@ public class StringTokenizerLetterFrequency {
 
                 //Splitting the lines into different lines with a comma
                 String[] allLines = line.split(",");
+                // Print statement for troubleshooting:  System.out.println(Arrays.toString(allLines));
                 String letterLines = allLines[0].trim();
                 //line readers for floats and integers in all of the lines
-                int frequency = Integer.parseInt(allLines[1]);
-                float percentage = Float.parseFloat(allLines[2]);
+                int frequency = Integer.parseInt(allLines[1].trim());
+                float percentage = Float.parseFloat(allLines[2].trim());
 
                 //Adding the percentage to the total percentage
-                percentage += totalPercentage;
+                totalPercentage += percentage;
+                totalFrequency += frequency;
 
                 // Printing out the letter data in formatted print of letterLine, frequency, and percentage
-                System.out.printf("%s\bFrequency: %d\bPercentage: %.1f%%\n", letterLines, frequency, percentage);
-
-                //Calculating the average frequency
-                float averageFrequency = (float) (totalFrequency / 26.0);
-
-                //Printing out the line totals
-                System.out.println("\n Totals: ");
-                //Percentage line totals
-                System.out.printf("Percentage Total: %.1f%%\n");
-                //Frequency line totals
-                System.out.printf("Frequency Total: %.2\n");
+                System.out.printf("%s\b Frequency: %d\b Percentage: %.1f%%\n", letterLines, frequency, percentage);
 
             }
+
+            //Calculating the average frequency
+            float averageFrequency = (float) (totalFrequency / 26.0);
+
+            //Printing out the line totals
+            System.out.println("\n Totals: ");
+            //Percentage line totals
+            System.out.printf("Percentage Total: %.1f%%\n", totalPercentage);
+            //Frequency line totals
+            System.out.println("Frequency Total: " + totalFrequency);
+            System.out.printf("Average frequency is %.1f%%\n", averageFrequency);
+
             //Catching the possible IO exception
         }catch (IOException e){
             //print out the error
