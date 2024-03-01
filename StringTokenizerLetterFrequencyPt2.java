@@ -18,7 +18,8 @@ import java.util.Scanner;
 //Pt2 of the string tokenizer creating and reading from the file 5x
 public class StringTokenizerLetterFrequencyPt2 {
 
-//Creating the main driver method
+private static String line;
+    //Creating the main driver method
     public static void main(String[] args) {
         //Creating the try method
         try{
@@ -110,5 +111,23 @@ public class StringTokenizerLetterFrequencyPt2 {
         } catch (FileNotFoundException e) {
             e.printStackTrace();  
         }
+        }
+        //Calculating the average age of the input data
+            private static float averageAge() {
+                //Setting the total age = to 0
+                float totalAge = 0;
+                //spliting age lines
+                String[] ageLines = line.split(",");
+                //float of the age lines
+                float age = Float.parseFloat(ageLines[1].trim());
+                //Total age += age
+            totalAge += age;
+            //calculating the average age float
+            float averageAge = (float) (totalAge / 26.0);
+            //Printing out the average age
+            System.out.printf("Average age is %.1f%%\n", averageAge);
+            System.out.println();
+            //returning the average age
+            return averageAge;
        }
     }
