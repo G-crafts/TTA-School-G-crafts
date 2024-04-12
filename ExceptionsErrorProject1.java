@@ -3,7 +3,7 @@
 //Software and Development Semester 1
 //Exceptions Programming Project
 
-public class ExceptionsErrorProject{
+public class ExceptionsErrorProject1{
     public static void main(String[] args){
         //creating a string statement
         String str = new String("dogBreed");

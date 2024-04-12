@@ -34,8 +34,9 @@ public class Horse1 implements Comparable{
             
     }
 // Add the compareTo method
-    {public String Horse.compareTo(A o);
+    public String Horse.compareTo(A o){
     return.this horseName-birthYear
+    }
 
     String name;
     

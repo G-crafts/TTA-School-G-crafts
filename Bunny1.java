@@ -4,7 +4,7 @@
 
 import java.util.ArrayList;
 
-public class Bunny2{
+public class Bunny1{
     // This array list creates a way to print out all bunnies using bunny5
     
     //The method for the objects

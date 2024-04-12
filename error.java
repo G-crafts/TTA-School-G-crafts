@@ -17,18 +17,26 @@ for my java class to learn troubleshooting on
 public class error {
     
     //creating a field for I
+    
     private static int i;
+    
 
     //Adding the main driver method
     public static void main(String[] args) {
-        
+       
     
     System.out.println("hello everybody");
+        
+        
+        
     System.out.println("am I doing this correctly");
+    
+
     for (int i=0;i<10;i++){
         //changing the lm to ln
         System.out.println("the number i is "+i);
     }
+   
     // uncapitalizing the F in for
     //uncapitalizing the i in int 
     //changing the colon to a semicolon
@@ -36,6 +44,7 @@ public class error {
         System.out.println("the new number i is "+i);
     }
     //creating a field for i
+
     if (i==0){
         System.out.print("i is equal to zero");
 
@@ -44,6 +53,7 @@ public class error {
         System.out.print("i is not equal to zero");
 
     }
+    
     //what other errors can I put into a source code file?
     //spelling errors and variable errors
 }

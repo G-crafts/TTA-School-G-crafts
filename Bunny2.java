@@ -5,10 +5,10 @@
 
 import java.util.ArrayList;
 //The bunny class
-public class Bunny1 {
+public class Bunny2 {
     static ArrayList bunnylist=new ArrayList ();
     //Bunny objects and description
- public Bunny1 (String name, int age, String color) {
+ public Bunny2 (String name, int age, String color) {
         //Setting the bunny name
         bunnyName = name;
         //Sets the bunny age
@@ -27,16 +27,16 @@ public class Bunny1 {
     //The second assignment part with the fixes
     public static void main (String[] args) {
         // first object
-        Object bunny5 = new Bunny1("Sammy", 2, "white");
+        Object bunny5 = new Bunny2("Sammy", 2, "white");
         bunnylist.add(bunny5);
         // Second object
-        bunny5 = new Bunny1("Carrot", 1, "greyish");
+        bunny5 = new Bunny2("Carrot", 1, "greyish");
         bunnylist.add(bunny5);
         //Third object
-        bunny5 = new Bunny1("Lacey", 4, "black");
+        bunny5 = new Bunny2("Lacey", 4, "black");
         bunnylist.add(bunny5);
         //Fourth object
-        bunny5 = new Bunny1("Celery", 6, "red");
+        bunny5 = new Bunny2("Celery", 6, "red");
         //printing the arraylist
         for(int i=0; i<bunnylist.size () ;i++) {
         bunny5=bunnylist.get(i);
@@ -46,13 +46,13 @@ public class Bunny1 {
      public void size() {
             System.out.println("centimeters");
              }
-        Bunny myBunny = new Bunny1();
+        Bunny myBunny = new Bunny2();
         myBunny.size();
         Bunnies myBunny = new Bunnies();
         myBunny.@size(40);
     
         Bunnies2 myBunny = new Bunnies2();{
-         Bunny1 = myBunny.breed("breed");
+         Bunny2 = myBunny.breed("breed");
         myBunny.breed("HollandLop");
         }
 }

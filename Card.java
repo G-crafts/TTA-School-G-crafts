@@ -36,12 +36,14 @@ public class Card{
        //Sets card value
        this.cardValue=cardValue;
     }
+
 //using the to string method to type of suit and usign getters for suit type, type of card, and card value
 public String toString(){
     String cardTraits;
     cardTraits = "This card is a "+typeofCard+" of "+suitType;
     return cardTraits;
         }
+        
         public String gettypeofCard(){
             return typeofCard;
         }

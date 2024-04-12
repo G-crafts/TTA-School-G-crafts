@@ -12,7 +12,6 @@ public class Horse implements Comparable<Horse>{
     String name;
     
     int birthYear;
-
     //Creating the parameters
     public Horse(String horseName, int year){
 

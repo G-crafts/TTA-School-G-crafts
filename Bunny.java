@@ -1,29 +1,50 @@
+//G-crafts
 // katelynn.graham@malad.us
 // Objects Arraylist for Software and Programming CT
 // By Katelynn Graham
+//Software and Programming Dev
+// Kim Gross
+
+
+//Added debugging print statements added by:
+//katelynn.graham@malad.us
+//Added debugged areas
+//Added debug boolean
+//Debugged by G-crafts
+//for Debugging Project
+//Software and Programming Dev
+//April 11, 2024
+//For Kim Gross
 
 import java.util.ArrayList;
+import java.util.IllegalFormatConversionException;
 
 public class Bunny{
     // This array list creates a way to print out all bunnies using bunny5
-    static ArrayList bunnylist=new ArrayList ();
-
+ 
     // Name for the bunnies
     String bunnyName;
     //Variable for bunny color
     String bunnyColor;
     // Variable for bunny age
     String bunnyAge;
-
+    
     //The method for the objects
     public Bunny (String name, int age, String color) {
         //Setting the bunny name
         bunnyName = name;
         //Sets the bunny age
         bunnyAge = String.valueOf(age);
+        //debugging statement for string to int for age
+        System.out.println(String.format("Debugging: The value of age is %s", age));
+
         //Sets the bunny color
         bunnyColor = color;
+
+        // added for the value and name of the bunny for debugging
+System.out.println(String.format("BunnyName %s has an bunnyAge %d", bunnyName, bunnyAge));
     }
+    
     public String toString(){
         String bunnyTraits;
         bunnyTraits = bunnyName+" is "+bunnyAge+" years old and is "+bunnyColor;
@@ -33,21 +54,53 @@ public class Bunny{
 
 
     public static void main (String[] args) {
-        // first object
-        Object bunny5 = new Bunny("Sammy", 2, "white");
-        bunnylist.add(bunny5);
-        // Second object
-        bunny5 = new Bunny("Carrot", 1, "greyish");
-        bunnylist.add(bunny5);
-        //Third object
-        bunny5 = new Bunny("Lacey", 4, "black");
-        bunnylist.add(bunny5);
-        //Fourth object
-        bunny5 = new Bunny("Celery", 6, "red");
-        //printing the arraylist
-        for(int i=0; i<bunnylist.size () ;i++) {
-        bunny5=bunnylist.get(i);
-        System.out.println(bunny5);
+        boolean deBug = true;
+        boolean deBugger = false;
+        int debug1 = 1;
+        
+
+    try {    
+        //creating a debugger that switches on and off
+    if (deBug) {
+
+        System.out.println("Debugging is off");
+    }
+     if (deBugger) {
+
+        System.out.println("Debugging is on and the imporant varibles are bcd");
+     }
+        //some output of the debugger if it is on
+        if (debug1==1){
+    System.out.println(deBugger);
+     }
+    else{ 
+        System.out.println(debug1);
+   
+    }
+
+
+
+
+      // first object
+      Bunny bunny1 = new Bunny("Sammy", 2, "white");
+      // Second object
+      Bunny bunny2 = new Bunny("Carrot", 1, "greyish");
+      //Third object
+      Bunny bunny3 = new Bunny("Lacey", 4, "black");
+      //Fourth object
+      Bunny bunny4 = new Bunny("Celery", 6, "red");
+      //printing the arraylist
+    
+      System.out.println(bunny1);
+      System.out.println(bunny2);
+      System.out.println(bunny3);
+      System.out.println(bunny4);
+
+
+
+        } catch (IllegalFormatConversionException e) {
+            System.out.println(e.getMessage());
+
         }
     }
 }
