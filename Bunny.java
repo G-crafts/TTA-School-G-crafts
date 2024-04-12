@@ -35,13 +35,13 @@ public class Bunny{
         bunnyName = name;
         //Sets the bunny age
         bunnyAge = String.valueOf(age);
-        //debugging statement for string to int for age
+        //debugging statement for string to int for age. Should be printing out the value of the age with the string converting to an int.
         System.out.println(String.format("Debugging: The value of age is %s", age));
 
         //Sets the bunny color
         bunnyColor = color;
 
-        // added for the value and name of the bunny for debugging
+        // added for the value and name of the bunny for debugging. Should be printing out the format of the bunny name and has an age.
 System.out.println(String.format("BunnyName %s has an bunnyAge %d", bunnyName, bunnyAge));
     }
     
@@ -76,6 +76,7 @@ System.out.println(String.format("BunnyName %s has an bunnyAge %d", bunnyName, b
     else{ 
         System.out.println(debug1);
    
+        //adding my first breakpoint
     }
 
 
@@ -89,15 +90,17 @@ System.out.println(String.format("BunnyName %s has an bunnyAge %d", bunnyName, b
       Bunny bunny3 = new Bunny("Lacey", 4, "black");
       //Fourth object
       Bunny bunny4 = new Bunny("Celery", 6, "red");
-      //printing the arraylist
+      
+      //adding my second break point:
     
+      //adding the printout section
       System.out.println(bunny1);
       System.out.println(bunny2);
       System.out.println(bunny3);
       System.out.println(bunny4);
 
 
-
+//Catching the format conversion exception that may be thrown
         } catch (IllegalFormatConversionException e) {
             System.out.println(e.getMessage());
 
