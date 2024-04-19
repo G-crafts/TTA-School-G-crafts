@@ -16,6 +16,15 @@
 //April 11, 2024
 //For Kim Gross
 
+//Added Debugging Breakpoints at Print Statements
+//katelynn.graham@malad.us
+//G-crafts
+//Debugged by G-crafts/Katelynn Graham
+//For Debugging Project Pt. 2
+//Software and Programming Dev 11B
+//April 18, 2024
+// For Kim Gross
+
 import java.util.ArrayList;
 import java.util.IllegalFormatConversionException;
 
@@ -28,6 +37,7 @@ public class Bunny{
     String bunnyColor;
     // Variable for bunny age
     String bunnyAge;
+        
     
     //The method for the objects
     public Bunny (String name, int age, String color) {
@@ -36,12 +46,14 @@ public class Bunny{
         //Sets the bunny age
         bunnyAge = String.valueOf(age);
         //debugging statement for string to int for age. Should be printing out the value of the age with the string converting to an int.
+        //+added breakpoint
         System.out.println(String.format("Debugging: The value of age is %s", age));
 
         //Sets the bunny color
         bunnyColor = color;
 
         // added for the value and name of the bunny for debugging. Should be printing out the format of the bunny name and has an age.
+        //+added breakpoint
 System.out.println(String.format("BunnyName %s has an bunnyAge %d", bunnyName, bunnyAge));
     }
     
@@ -63,6 +75,7 @@ System.out.println(String.format("BunnyName %s has an bunnyAge %d", bunnyName, b
         //creating a debugger that switches on and off
     if (deBug) {
 
+        //Added breakpoint
         System.out.println("Debugging is off");
     }
      if (deBugger) {
@@ -71,9 +84,11 @@ System.out.println(String.format("BunnyName %s has an bunnyAge %d", bunnyName, b
      }
         //some output of the debugger if it is on
         if (debug1==1){
+            //+added breakpoint
     System.out.println(deBugger);
      }
     else{ 
+        //+added breakpoint
         System.out.println(debug1);
    
         //adding my first breakpoint
@@ -102,6 +117,7 @@ System.out.println(String.format("BunnyName %s has an bunnyAge %d", bunnyName, b
 
 //Catching the format conversion exception that may be thrown
         } catch (IllegalFormatConversionException e) {
+            //+added breakpoint
             System.out.println(e.getMessage());
 
         }
