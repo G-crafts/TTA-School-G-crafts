@@ -66,34 +66,33 @@ public class CardGameUserInput {
         } catch (IOException e){
             e.printStackTrace();
         }
-    }
-
-        //Reading from the file 4 times
+          //Reading from the file 4 times
     String filePath = "userinputdata.txt"; {
         
-    try {
-
-            //Making the scanner that will read from student.txt
-            Scanner scanner = new Scanner(new File(filePath));
-
-            // for method for reading from the file with the scanner
-            for (int x = 0; x<4; x++){
-                //Reads from the input information in the file 5 times
-                String userName = scanner.nextLine();
-                 String playerNumber = scanner.nextLine();
-                 String gameNumber = scanner.nextLine();
-
-                 //Prints out all of the information into the file with their own lines
-                 System.out.println(filePath);               
-            }
-            
-            //Closing the scanner
-            scanner.close();
-
-            //Catching the filenotfoundexception
-          } catch (FileNotFoundException e) {
-            e.printStackTrace();  
-         }
+        try {
+    
+                //Making the scanner that will read from student.txt
+                Scanner scanner = new Scanner(new File(filePath));
+    
+                // for method for reading from the file with the scanner
+                for (int x = 0; x<4; x++){
+                    //Reads from the input information in the file 5 times
+                    String userName = scanner.nextLine();
+                     String playerNumber = scanner.nextLine();
+                     String gameNumber = scanner.nextLine();
+    
+                     //Prints out all of the information into the file with their own lines
+                     System.out.println(filePath);               
+                }
+                
+                //Closing the scanner
+                scanner.close();
+    
+                //Catching the filenotfoundexception
+              } catch (FileNotFoundException e) {
+                e.printStackTrace();  
+             }
+    }
 
     }
 }

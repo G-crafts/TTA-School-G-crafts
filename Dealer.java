@@ -5,7 +5,11 @@
 //Software and Programming dev
 //Mr Gross
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Scanner;
+import java.io.File;
+
 
 public class Dealer {
     //creating the parameters for the class
@@ -107,6 +111,34 @@ public static void main (String[] args){
             
         }
 
+  //Reading from the file 
+String filePath = "userinputgame.txt"; {
+
+try {
+
+        //Making the scanner that will read from userinputgame.txt
+        Scanner scan = new Scanner(new File(filePath));
+
+        // for method for reading from the file with the scanner
+        for (int x = 0; x<4; x++){
+            //Reads from the input information in the file 5 times
+            String userName = scan.nextLine();
+             String playerNum = scan.nextLine();
+             String playerWins = scan.nextLine();
+             String gamesPlayed = scan.nextLine();
+
+             //Prints out all of the information into the file with their own lines
+             System.out.println(filePath);               
+        }
+        
+        //Closing the scanner
+        scan.close();
+
+        //Catching the filenotfoundexception
+      } catch (FileNotFoundException e) {
+        e.printStackTrace();  
+     }
+}
 
     //If player1's score is greater than players 2-5 score, player1 beats players 2-5
 
@@ -147,9 +179,10 @@ public static void main (String[] args){
 
     if (player4Score>player5Score){
         System.out.println("Player4 beats Player5");
-    }
+    }     
 
-
+      
     }
-}
+             
+ }
     
