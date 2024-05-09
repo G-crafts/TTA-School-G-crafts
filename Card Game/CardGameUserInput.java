@@ -58,10 +58,6 @@ public class CardGameUserInput {
                 buffWriter.newLine(); //Making it so it's not all on the same line
                 buffWriter.write(gameNumber);
                 buffWriter.newLine();
-
-             // added for the name, number, and game number of the player for debugging. Should be printing out the format of the player name, number, and the game number.
-            //+added breakpoint
-        System.out.println(String.format("The userName, playerNumber %s and gameNumber %d", userName, playerNumber, gameNumber));
             }
 
             //Closing the scanner, bufferedwriter, and filewriter

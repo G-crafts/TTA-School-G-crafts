@@ -38,20 +38,37 @@ public class GameState implements Serializable {
                 break;
     
             }
-            //if the answer is yes, it will save the game data and break the input
+            //if the answer is yes, it will save the game data
             if (inputString.equalsIgnoreCase("Yes")) {
                 System.out.println("'Game data saved'");
-                break;
         }
-        //if the answer is no to saving the game, it will print out no save data and break the input
+        //if the answer is no to saving the game, it will print out no save data 
         if (inputString.equalsIgnoreCase("No")) {
             System.out.println("'No game data saved'");
+        }
+    
+    System.out.println("Would you like to load your saved data? Type Yes or No: ");
+
+    scan.nextLine();
+
+        //creating a command for "done" as told to type in the printed line above
+        if (inputString.equalsIgnoreCase("done")) {
             break;
+
         }
+        //if the answer is yes, it will load the saved game
+        if (inputString.equalsIgnoreCase("Yes")) {
+            System.out.println("'Loading saved data...'");
     }
+    //if the answer is no to saving the game, it will create a new game
+    if (inputString.equalsIgnoreCase("No")) {
+        System.out.println("'Creating a new game...'");
+    }
+
     //catching a possible exceptionininitializererror 
-}catch (ExceptionInInitializerError e){
-    e.printStackTrace();
-        }
+}
+    }catch (ExceptionInInitializerError e){
+        e.printStackTrace();
     }
+}
 }
