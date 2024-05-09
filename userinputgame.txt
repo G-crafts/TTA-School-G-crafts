@@ -1,0 +1,20 @@
+Kitty
+player 1
+4
+1
+greate
+Mom
+player 2
+4
+1
+good
+Dad
+player 3
+4
+0
+Terrible. I lost every round!
+Sister
+player 3
+4 games
+1
+good. dad gets mad because he loses lol

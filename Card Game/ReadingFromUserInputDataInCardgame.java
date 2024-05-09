@@ -5,6 +5,11 @@
     //Software and Programming Dev 11B
     // Mr. Gross
     //February 2, 2024
+    //Any added or changed code by Katelynn Graham
+    // for Kim Gross
+    //Software and programming 11B
+    //Final Project for semester 2
+    // May 8, 2024
 
  //Adding the imports for the file, the filenotfoundexception, and the scanner
 import java.util.Scanner;

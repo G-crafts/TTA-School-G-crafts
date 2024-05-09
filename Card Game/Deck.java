@@ -3,6 +3,10 @@
 // Software and Programming Development 11A
 //Cards Project inherited class and Deck class
 //December 1, 2023
+//Any added code by Katelynn Graham
+//For Kim Gross
+//Software and Programming Developement 11B
+//May 8th, 2024
 
 import java.util.ArrayList;
 import java.util.Collection;

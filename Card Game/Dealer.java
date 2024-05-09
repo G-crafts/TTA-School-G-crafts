@@ -4,8 +4,14 @@
 //December 7, 2023
 //Software and Programming dev
 //Mr Gross
+//Added debugging code and etc.
+//By Katelynn Graham
+//For Software and Programming Dev 11B
+//Final Project Edits for Semester 2
+//May 8, 2024
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
@@ -22,6 +28,38 @@ public class Dealer {
 
 //creating the deck and all 5 players
 public static void main (String[] args){
+
+    //DEBUGGER
+        boolean deBug = true;
+        boolean deBugger = false;
+        int debug1 = 1;
+        
+
+    try {    
+        //creating a debugger that switches on and off
+    if (deBug) {
+
+        //Added breakpoint
+        System.out.println("Debugging is off");
+    }
+     if (deBugger) {
+
+        System.out.println("Debugging is on and the imporant varibles are bcd");
+     }
+        //some output of the debugger if it is on
+        if (debug1==1){
+            //+added breakpoint
+    System.out.println(deBugger);
+     }
+    else{ 
+        //+added breakpoint
+        System.out.println(debug1);
+   
+        
+    }
+
+
+
     //new deck
     deckInUse=new Deck();
     //making the 5 players
@@ -73,6 +111,8 @@ public static void main (String[] args){
             player1Score=player1Score+player1.get(x).getCardValue();
             
         }
+        //Debugging statement
+        System.out.println(String.format("Debugging: The value of age is player1+player1score", player1Score));
 
         //print out player 2's hand and get the value of their cards
 
@@ -83,6 +123,8 @@ public static void main (String[] args){
             player2Score=player2Score+player2.get(x).getCardValue();
             
         }
+        //Debugging Statement
+        System.out.println(String.format("Debugging: The value of age is player2+player2score", player2Score));
 
         //print out player 3's hand and get the value of their cards
 
@@ -92,7 +134,8 @@ public static void main (String[] args){
             player3Score=player3Score+player3.get(x).getCardValue();
             
         }
-
+        //Debugging Statement
+        System.out.println(String.format("Debugging: The value of age is player3+player23score", player3Score));
         //print out player 4's hand and get the value of their cards
 
          System.out.println("player4's hand is");
@@ -101,7 +144,8 @@ public static void main (String[] args){
             player4Score=player4Score+player4.get(x).getCardValue();
             
         }
-
+         //Debugging Statement
+         System.out.println(String.format("Debugging: The value of age is player4+player4score", player4Score));
         //print out player 5's hand and get the value of their cards
 
          System.out.println("player5's hand is");
@@ -110,7 +154,8 @@ public static void main (String[] args){
             player5Score=player5Score+player5.get(x).getCardValue();
             
         }
-
+         //Debugging Statement
+         System.out.println(String.format("Debugging: The value of age is player5+player5score", player5Score));
   //Reading from the file 
 String filePath = "userinputgame.txt"; {
 
@@ -139,6 +184,7 @@ try {
         e.printStackTrace();  
      }
 }
+
 
     //If player1's score is greater than players 2-5 score, player1 beats players 2-5
 
@@ -182,7 +228,10 @@ try {
     }     
 
       
+    }catch (ExceptionInInitializerError e){
+        e.printStackTrace();
     }
-             
+    
+}       
  }
     

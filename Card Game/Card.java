@@ -5,12 +5,52 @@
 //Cards Project Card Class
 //Software and Programming Development 11A
 //December 1, 2023
+//Added Code for Final Project Semester 2
+//By Katelynn Graham
+//For Kim Gross
+//Software and Programming Dev 11B
+//May 8th, 2024
 
 import java.util.List;
 
 
 public class Card{
+    public static void main(String[] args) {
+        
+    
  
+    //DEBUGGER
+    boolean deBug = true;
+    boolean deBugger = false;
+    int debug1 = 1;
+    
+
+try {    
+    //creating a debugger that switches on and off
+if (deBug) {
+
+    //Added breakpoint
+    System.out.println("Debugging is off");
+}
+ if (deBugger) {
+
+    System.out.println("Debugging is on and the imporant varibles are bcd");
+ }
+    //some output of the debugger if it is on
+    if (debug1==1){
+        //+added breakpoint
+System.out.println(deBugger);
+ }
+else{ 
+    //+added breakpoint
+    System.out.println(debug1);
+
+    
+}
+}catch (ExceptionInInitializerError e){
+    e.printStackTrace();
+}
+    }
      
         //Create the class variables
         String cardType;
@@ -53,6 +93,7 @@ public String toString(){
         public int getCardValue(){
             return cardValue;
         }
+        
     }
 
 
