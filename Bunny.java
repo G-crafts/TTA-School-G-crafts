@@ -37,7 +37,8 @@ public class Bunny{
     String bunnyColor;
     // Variable for bunny age
     String bunnyAge;
-        
+    //boolean for debugging switcher
+    boolean debug = true; 
     
     //The method for the objects
     public Bunny (String name, int age, String color) {
@@ -47,14 +48,18 @@ public class Bunny{
         bunnyAge = String.valueOf(age);
         //debugging statement for string to int for age. Should be printing out the value of the age with the string converting to an int.
         //+added breakpoint
+        if (debug == true){
         System.out.println(String.format("Debugging: The value of age is %s", age));
+        }
 
         //Sets the bunny color
         bunnyColor = color;
 
         // added for the value and name of the bunny for debugging. Should be printing out the format of the bunny name and has an age.
         //+added breakpoint
-System.out.println(String.format("BunnyName %s has an bunnyAge %d", bunnyName, bunnyAge));
+        if (debug == true){
+        System.out.println(String.format("BunnyName %s has an bunnyAge %d", bunnyName, bunnyAge));
+        }
     }
     
     public String toString(){

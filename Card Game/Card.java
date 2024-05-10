@@ -23,7 +23,7 @@ public class Card{
     boolean deBug = true;
     boolean deBugger = false;
     int debug1 = 1;
-    
+    boolean debugs = true;
 
 try {    
     //creating a debugger that switches on and off
@@ -92,7 +92,9 @@ public String toString(){
         }
         public int getCardValue(){
             return cardValue;
+            
         }
+        
         
     }
 

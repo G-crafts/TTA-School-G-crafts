@@ -28,7 +28,7 @@ public class Bucket1 {
         return next;
     }
     public void setNext(Bucket1 addNewItem){
-        this.next = next;
+        this.next = addNewItem;
     }
 
 

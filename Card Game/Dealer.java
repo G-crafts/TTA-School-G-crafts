@@ -33,6 +33,7 @@ public static void main (String[] args){
         boolean deBug = true;
         boolean deBugger = false;
         int debug1 = 1;
+        boolean debugs = true;
         
 
     try {    
@@ -104,19 +105,17 @@ public static void main (String[] args){
         }
     }
         //print out player 1's hand and get the value of their cards
-
         System.out.println("player1's hand is");
         for (int x=0; x<6;x++){
             System.out.println(player1.get(x));
             player1Score=player1Score+player1.get(x).getCardValue();
-            
         }
+
         //Debugging statement
-        System.out.println(String.format("Debugging: The value of age is player1+player1score", player1Score));
-
+        if (debugs == true){
+        System.out.println(String.format("Debugging: The value of score is player1+player1score", player1Score));
+        }
         //print out player 2's hand and get the value of their cards
-
-
          System.out.println("player2's hand is");
         for (int x=0; x<6;x++){
             System.out.println(player2.get(x));
@@ -124,10 +123,10 @@ public static void main (String[] args){
             
         }
         //Debugging Statement
-        System.out.println(String.format("Debugging: The value of age is player2+player2score", player2Score));
-
+        if (debugs == true){
+        System.out.println(String.format("Debugging: The value of score is player2+player2score", player2Score));
+        }
         //print out player 3's hand and get the value of their cards
-
          System.out.println("player3's hand is");
         for (int x=0; x<6;x++){
             System.out.println(player3.get(x));
@@ -135,27 +134,31 @@ public static void main (String[] args){
             
         }
         //Debugging Statement
-        System.out.println(String.format("Debugging: The value of age is player3+player23score", player3Score));
+        if (debugs == true){
+        System.out.println(String.format("Debugging: The value of score is player3+player23score", player3Score));
+        }
         //print out player 4's hand and get the value of their cards
-
          System.out.println("player4's hand is");
         for (int x=0; x<6;x++){
             System.out.println(player4.get(x));
             player4Score=player4Score+player4.get(x).getCardValue();
-            
         }
-         //Debugging Statement
-         System.out.println(String.format("Debugging: The value of age is player4+player4score", player4Score));
-        //print out player 5's hand and get the value of their cards
 
-         System.out.println("player5's hand is");
+         //Debugging Statement
+         if (debugs == true){
+         System.out.println(String.format("Debugging: The value of score is player4+player4score", player4Score));
+         }
+        //print out player 5's hand and get the value of their cards
+        System.out.println("player5's hand is");
         for (int x=0; x<6;x++){
             System.out.println(player5.get(x));
             player5Score=player5Score+player5.get(x).getCardValue();
             
         }
          //Debugging Statement
-         System.out.println(String.format("Debugging: The value of age is player5+player5score", player5Score));
+         if (debugs == true){
+         System.out.println(String.format("Debugging: The value of score is player5+player5score", player5Score));
+         }
   //Reading from the file 
 String filePath = "userinputgame.txt"; {
 

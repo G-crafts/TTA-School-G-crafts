@@ -54,13 +54,15 @@ class Stack {
     }
   
     public static void main(String[] args) {
+      //Creating a stack that holds 5 items
       Stack stack = new Stack(5);
-  
+  //Pushing items 1-4
       stack.push(1);
       stack.push(2);
       stack.push(3);
       stack.push(4);
   
+      //After popping out the items, print the stack
       stack.pop();
       System.out.println("\nAfter popping out");
   
